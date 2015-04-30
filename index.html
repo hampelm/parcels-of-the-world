@@ -62,7 +62,8 @@ tilePromise.done(function(data) {
     </div>
 
     <script type="text/template" id="styles">
-      [GEOMETRY = Polygon],[GEOMETRY = MultiPolygon] {
+      [GEOMETRY = Polygon],
+      [GEOMETRY = MultiPolygon] {
         [zoom >= 14] {
           line-color: <%= s.color %>;
           line-width: 0.75;
@@ -72,6 +73,25 @@ tilePromise.done(function(data) {
         polygon-opacity: 0.85;
       }
     </script>
+
+    <script type="text/template" id="styles-glow">
+      [GEOMETRY = Polygon],
+      [GEOMETRY = MultiPolygon] {
+        [zoom >= 14] {
+          line-color: <%= s.color %>;
+          line-width: 0.75;
+          line-opacity: 0.8;
+        }
+        polygon-fill: #fff;
+        polygon-opacity: 0.5;
+        ::glow {
+          line-color: <%= s.color %>;
+          line-width: 10;
+          line-opacity: 0.2;
+        }
+      }
+    </script>
+
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>

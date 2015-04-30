@@ -8,7 +8,7 @@ $(function(){
   var dark = L.tileLayer('http://a.tiles.mapbox.com/v3/matth.m2af8hjl/{z}/{x}/{y}.png');
 
   var template = _.template($('#styles').html());
-  var templateDashed = _.template($('#styles-dashed').html());
+  var templateGlow = _.template($('#styles-glow').html());
 
   var options = {
     zoomControl: false,
@@ -71,7 +71,7 @@ $(function(){
       type: 'parcels'
     },
     select: {},
-    styles: template({s: {
+    styles: templateGlow({s: {
       color: '#ff3d98',
       fillColor: 'transparent',
       pointSize: 18
