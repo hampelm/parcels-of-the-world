@@ -47,7 +47,7 @@ $(function(){
         console.log(e);
         popup
             .setLatLng(e.latlng)
-            .setContent(e.data.long_name)
+            .setContent(e.data.long_name + '<br>PIN: ' + e.data.object_id)
             .openOn(map);
       });
       map.addLayer(utfGrid);
