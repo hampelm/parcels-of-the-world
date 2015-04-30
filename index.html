@@ -48,7 +48,7 @@ tilePromise.done(function(data) {
   console.log("We got data!", data);
   var featureLayer = L.tileLayer(data.tiles[0]);
   map.addLayer(featureLayer);
-}</code></pre>
+});</code></pre>
 
     <p>Tiles are available from zoom level 12 on in. Style data using
     <a href="https://github.com/mapbox/carto/blob/master/docs/latest.md">CartoCSS</a>

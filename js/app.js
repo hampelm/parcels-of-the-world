@@ -105,5 +105,4 @@ $(function(){
   addParcelLayer(mapChicago, chicago);
   addParcelLayer(mapBrooklyn, brooklyn);
 
-
 });
