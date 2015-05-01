@@ -1,11 +1,11 @@
 /*globals L */
 
 $(function(){
-  var tileURL = 'http://matth-tiles.herokuapp.com/features/tile.json';
-  var baseLayer = L.tileLayer('http://a.tiles.mapbox.com/v3/matth.map-pzt2g69t/{z}/{x}/{y}.png');
-  var pencil = L.tileLayer('http://a.tiles.mapbox.com/v3/matth.m2aepop1/{z}/{x}/{y}.png');
-  var sat = L.tileLayer('http://a.tiles.mapbox.com/v3/matth.m2afagi8/{z}/{x}/{y}.png');
-  var dark = L.tileLayer('http://a.tiles.mapbox.com/v3/matth.m2af8hjl/{z}/{x}/{y}.png');
+  var tileURL = '//matth-tiles.herokuapp.com/features/tile.json';
+  var baseLayer = L.tileLayer('//a.tiles.mapbox.com/v3/matth.map-pzt2g69t/{z}/{x}/{y}.png');
+  var pencil = L.tileLayer('//a.tiles.mapbox.com/v3/matth.m2aepop1/{z}/{x}/{y}.png');
+  var sat = L.tileLayer('//a.tiles.mapbox.com/v3/matth.m2afagi8/{z}/{x}/{y}.png');
+  var dark = L.tileLayer('//a.tiles.mapbox.com/v3/matth.m2af8hjl/{z}/{x}/{y}.png');
 
   var template = _.template($('#styles').html());
   var templateGlow = _.template($('#styles-glow').html());
